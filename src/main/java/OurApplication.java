@@ -28,7 +28,7 @@ public class OurApplication {
     public static void main(String[] args) {
         try {
             hibernateSession = HibernateUtils
-                    .buildSessionFactory()
+            		.buildSessionFactory()
                     .openSession();
             hibernateSession.beginTransaction();
 

@@ -17,6 +17,7 @@ public class HibernateUtils {
         Configuration conf = new Configuration();
         //conf.addAnnotatedClass(RobotEntity.class);
         conf.addAnnotatedClass(LaptopEntity.class);
+        //" conf.configure" lets hibernate know which file to configure
         conf.configure("hibernate.cfg.xml");
         ServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .applySettings(
